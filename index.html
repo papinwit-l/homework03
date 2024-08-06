@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9597f603ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Shopping-Cart</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-home">
+        <a href="#">
+          <i class="fa-solid fa-scroll"></i>
+          <strong> Job</strong> Passcard
+        </a>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">PASSCARD</a></li>
+          <li><a href="#">PROFILE</a></li>
+        </ul>
+      </div>
+      <div class="nav-ext">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#">LOGIN</a>
+        <div></div>
+        <a href="#">SIGN UP</a>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <div class="title">
+        <h1>My Cart</h1>
+      </div>
+      <div class="content-main">
+        <div class="cart-wrapper">
+          <div class="cart docs-box">
+            <div class="bin">
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+            <div class="cart-pic">
+              <div class="icon">
+                <img src="./pics/google-docs-svgrepo-com.svg" alt="" />
+              </div>
+              <h5>Google Docs</h5>
+              <p>Used for business</p>
+            </div>
+            <div class="cart-info">
+              <h3>Google Docs</h3>
+              <div class="selection">
+                <div class="select-stat">
+                  <i class="fa-solid fa-circle c1"></i>
+                  <i class="fa-solid fa-circle c2"></i>
+                  <i class="fa-solid fa-circle c3"></i>
+                </div>
+                <div class="select-bar">
+                  <select class="docs select" onchange="selectChange(this)">
+                    <option value="1">LV 1-3</option>
+                    <option value="2">LV 2-3</option>
+                    <option value="3">LV 3-3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="price">THB 150</div>
+            </div>
+          </div>
+          <div class="cart slides-box">
+            <div class="bin">
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+            <div class="cart-pic">
+              <div class="icon">
+                <img src="./pics/google-slides-svgrepo-com.svg" alt="" />
+              </div>
+              <h5>Google Slides</h5>
+              <p>Used for business</p>
+            </div>
+            <div class="cart-info">
+              <h3>Google Slides</h3>
+              <div class="selection">
+                <div class="select-stat">
+                  <i class="fa-solid fa-circle c1"></i>
+                  <i class="fa-solid fa-circle c2"></i>
+                  <i class="fa-solid fa-circle c3"></i>
+                  <i class="fa-solid fa-circle c4"></i>
+                </div>
+                <div class="select-bar">
+                  <select class="slides select" onchange="selectChange(this)">
+                    <option value="1">LV 1/4</option>
+                    <option value="2">LV 2/4</option>
+                    <option value="3">LV 3/4</option>
+                    <option value="4">LV 4/4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="price">THB 150</div>
+            </div>
+          </div>
+        </div>
+        <div class="order-wrapper">
+          <div class="order-content">
+            <h4>Order Info</h4>
+            <div class="calc">
+              <div class="calc-price">
+                <p>Subtotal</p>
+                <p>THB 300</p>
+              </div>
+              <div class="promo">
+                <form>
+                  <label for="promo-code">
+                    <img src="./pics/promo.svg" alt="" />
+                  </label>
+                  <input
+                    class="promo-input"
+                    type="text"
+                    placeholder="Promotion Code"
+                  />
+                  <input class="promo-btn" type="button" value="APPLY" />
+                </form>
+              </div>
+            </div>
+            <hr />
+            <div class="total">
+              <div class="total-price">
+                <p>Total Payment</p>
+                <p>THB 300</p>
+              </div>
+              <a href="#">LOG IN TO CHECKOUT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
